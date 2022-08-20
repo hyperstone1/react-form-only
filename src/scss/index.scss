@@ -1,0 +1,185 @@
+input {
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+span {
+  padding: 0;
+}
+h2 {
+  font-size: 34px;
+  font-weight: 600;
+  padding-bottom: 60px;
+}
+.form_block {
+  position: relative;
+  width: 40%;
+  height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    input[name='email'],
+    input[name='password'] {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input[type='checkbox'] {
+      margin: 0;
+      margin-right: 10px;
+    }
+    .submit {
+      position: relative;
+      padding: 19px 0px;
+      height: 64px;
+      background: #4a67ff;
+      border-radius: 8px;
+      font-family: 'Helvetica Neue';
+      font-weight: 700;
+      font-size: 18px;
+      color: #ffffff;
+      cursor: pointer;
+      transition: all 0.25s;
+      &:hover {
+        background: #536ffa;
+      }
+      &:active {
+        background: #3c5cfd;
+      }
+    }
+    .submitting {
+      border: none;
+      opacity: 0.7;
+      &:hover {
+        background-color: #4a67ff;
+      }
+      &:active {
+        background-color: #4a67ff;
+      }
+    }
+    .check {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 40px;
+      label {
+        margin: 0;
+        margin-left: 10px;
+      }
+      .checkboxBlock {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        .checkbox-round {
+          position: relative;
+          margin: 0 auto;
+          width: 15px;
+          height: 14px;
+          background-color: white;
+          appearance: none;
+          -webkit-appearance: none;
+          cursor: pointer;
+          &:checked {
+            background: #4a67ff;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+    .errorInput {
+      border: 2px solid #e26f6f;
+      padding: 18px 16px !important;
+    }
+    .pass {
+      position: relative;
+      width: 100%;
+
+      input {
+        display: flex;
+        width: 100%;
+      }
+    }
+    .eye {
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: 20px;
+      bottom: 16px;
+      cursor: pointer;
+    }
+    .register {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    label {
+      margin: 20px 0 10px 0;
+    }
+    .check {
+      margin-top: 20px;
+    }
+    .error {
+      color: #e26f6f;
+    }
+
+    .errorSubmit {
+      position: relative;
+      padding: 21px 239px 22px 54px;
+      background: #f5e9e9;
+      border: 1px solid #e26f6f;
+      border-radius: 8px;
+      &:before {
+        content: '!';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 20px;
+        color: #ee6565;
+        background: #ffc8c8;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+      }
+    }
+    .containerInput {
+      display: flex;
+      flex-direction: column-reverse;
+      input:focus ~ label,
+      label:focus {
+        color: #009cb4;
+      }
+      input:focus {
+        border: 2px solid #009cb4;
+        padding: 18px 16px;
+      }
+    }
+    .pass {
+      display: flex;
+      flex-direction: column-reverse;
+      input:focus ~ label,
+      label:focus {
+        color: #009cb4;
+      }
+      input:focus {
+        border: 2px solid #009cb4;
+        padding: 18px 16px;
+      }
+    }
+  }
+}
